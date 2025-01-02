@@ -1,0 +1,49 @@
+.calendar-container {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-date-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .calendar-event.past {
+    background-color: lightgray;
+    color: #333;
+    padding: 2px 5px;
+    font-size: 10px;
+  }
+  
+  .calendar-event.upcoming {
+    background-color: lightgreen;
+    color: #333;
+    padding: 2px 5px;
+    font-size: 10px;
+  }
+  
+  .communication-details {
+    margin-top: 20px;
+  }
+  
+  .communication-details h3 {
+    margin-bottom: 10px;
+  }
+  
+  .past-communications, .upcoming-communications {
+    margin-bottom: 10px;
+  }
+  
+  .past-communications h4, .upcoming-communications h4 {
+    margin-bottom: 5px;
+  }
+  
+  .past-communications ul, .upcoming-communications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .past-communications li, .upcoming-communications li {
+    margin-bottom: 5px;
+  }
+  
