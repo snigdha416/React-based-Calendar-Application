@@ -69,4 +69,124 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-REACT APPLICATION 
+
+
+
+
+Setup and Installation
+
+Prerequisites:
+  Ensure you have the following installed on your machine:
+     1. Node.js (v16.x or higher).
+     2. Git.
+Steps:
+  1. Clone the Repository
+     Use Git to clone the repository from GitHub:
+        git clone https://github.com/snigdha416/React-based-Calendar-Application.git
+        cd React-based-Calendar-Application
+  2. Install Dependencies
+     Navigate to the project folder and install all required dependencies using npm:
+        npm install
+  3. Start the Development Server
+     Run the application locally in development mode:
+        npm start
+    The application will open in your default browser at:
+        http://localhost:3000/.
+
+Additional Notes
+  If your environment encounters issues during setup:
+    Ensure Node.js and npm are properly installed by checking their versions
+       node --version
+       npm --version
+  If the development server does not start, ensure all dependencies are correctly installed and retry:
+    npm install
+    npm start
+
+
+
+Deployment Instructions
+
+1. Build the Application
+      npm run build
+2. Deploy the Build Folder
+   GitHub Pages:
+      Install the gh-pages package
+3. Deploy the app
+      npm run deploy
+4. Project Live URL
+   
+
+
+
+Application Functionality
+
+1. Admin Module
+    Company Management:
+     Add, edit, and delete companies with details like:
+       1. Name
+       2. Location
+       3. LinkedIn Profile
+       4. Emails
+       5. Phone Numbers
+       6. Comments.
+       2. Set default communication periodicity (e.g., every 2 weeks).
+    Communication Method Management:
+       Define communication methods, such as:
+         1. LinkedIn Post
+         2. Email
+         3. Phone Call.
+       Specify: 
+         1. Order of execution 
+         2. Mandatory flags for communication methods.
+
+2. User Module
+    Dashboard: 
+      Displays:
+         1. Last five communications for each company.
+         2. Upcoming scheduled communication with type and date.
+      Uses color-coded highlights:
+         1. Red: Overdue communication.
+         2. Yellow: Communication due today.
+    Interactive Features:
+       Tooltips: Show notes for completed communications when hovering over them.
+       Log Communications: Log new communications via the "Communication Performed" action modal:
+           1. Select the type of communication.
+           2. Input the date.
+           3. Add notes.
+    Notifications:
+       1. Separate grids for:
+           1. Overdue communications.
+           2. Today’s communications.
+       2. A notification badge shows the count of overdue and due communications.
+    Calendar View:
+       Interactive calendar to:
+         1. Manage past communications (view dates and methods).
+         2. Manage upcoming communications (scheduled dates and methods).
+
+3. Reporting and Analytics Module(Optional)
+    Communication Frequency Report:
+      1. Visualize frequency of methods used (e.g., bar chart, pie chart).
+    Engagement Effectiveness Dashboard:
+      1. Metrics for successful responses by communication method.
+    Overdue Communication Trends:
+      1. Trendline or heatmap for overdue communications over time.
+    Downloadable Reports:
+      Export data as:
+        1. PDF for presentations.
+        2. CSV for further analysis.
+
+
+Known Limitations
+
+1. Admin Module
+   1. No real-time validation for fields such as:
+      1. LinkedIn profiles.
+      2. Email addresses.
+   2. Communication periodicity settings are static and may not adapt to dynamic scheduling needs.
+2. User Module
+   1. Tooltip information for completed communications is limited to basic notes.
+   2. Manual override of color-coded highlights (e.g., Red or Yellow) could lead to inconsistencies in communication tracking.
+3. Reporting Module (Optional)
+   1. Engagement metrics require accurate and consistent response tracking, which might involve additional complexity in implementation.
+   2. Reporting capabilities may have limited depth if the optional module is not fully implemented.
+
