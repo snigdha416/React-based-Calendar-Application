@@ -70,7 +70,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+React Calendar Application
 
+Overview:
+  This is a calendar application built using React. It allows users to view, add, and manage events in a user-friendly interface.
+Features:
+  1. View calendar by month, week, or day.
+  2. Add and edit events.
+  3. Responsive design for mobile and desktop.
+  4. Event reminders and notifications.
+Technologies Used:
+  1. React: Frontend library
+  2. React Router: For navigation
+  3. CSS/SCSS: For styling
+  4. Netlify: For deployment
 
 
 Setup and Installation
@@ -94,6 +107,7 @@ Steps:
         http://localhost:3000/.
 
 Additional Notes
+
   If your environment encounters issues during setup:
     Ensure Node.js and npm are properly installed by checking their versions
        node --version
@@ -101,22 +115,19 @@ Additional Notes
   If the development server does not start, ensure all dependencies are correctly installed and retry:
     npm install
     npm start
-
-
+    
 
 Deployment Instructions
 
 1. Build the Application
       npm run build
 2. Deploy the Build Folder
-   GitHub Pages:
-      Install the gh-pages package
-3. Deploy the app
-      npm run deploy
-4. Project Live URL
+     1. In the Netlify Dashboard, click on "Add New Site" → "Deploy manually".
+     2. Drag and drop the build folder into the upload area.
+     3. Netlify will process and deploy your application.
+3. Project Live URL
+   https://6777673d55c34f3d6a5ee64d--neon-toffee-3c3c84.netlify.app/
    
-
-
 
 Application Functionality
 
